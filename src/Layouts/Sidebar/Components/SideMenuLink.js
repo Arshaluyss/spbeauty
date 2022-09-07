@@ -24,7 +24,8 @@ function SideMenuLink({name, isActive, icon}) {
     
     return (
         <Clickable fillWidth={true}>
-            <Container className="d-flex align-self-center align-items-center justify-content-start px-3">
+            <Container className="d-flex align-self-center align-items-center justify-content-start px-3
+            ">
                 {icon}
                 <TextContainer>{name}</TextContainer>
             </Container>

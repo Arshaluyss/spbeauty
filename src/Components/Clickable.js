@@ -9,7 +9,7 @@ function Clickable(props) {
         color: inherit;
         padding: 0;
         margin: 0;
-        transition: background 0.1s, color 0.1s, opacity 0.1s;
+        transition: background 0.1s, color 0.1s, opacity 0.08s;
         width: ${fill ? '100%' : 'fit-content'};
     `;
     return (
