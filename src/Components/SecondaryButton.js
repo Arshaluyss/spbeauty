@@ -2,9 +2,9 @@ import Clickable from "./Clickable";
 import styled from "styled-components";
 
 function SecondaryButton(props) {
-    // Здесь устанавливается минимальная ширина для кнопки
-    let minWidth = props.minWidth === undefined ? '217px' : props.minWidth;
-    const Button = styled.div`
+  // Здесь устанавливается минимальная ширина для кнопки
+  let minWidth = props.minWidth === undefined ? "217px" : props.minWidth;
+  const Button = styled.div`
         background: #FFFFFF;
         border: 1px solid #64748B;
         border-radius: 24px;
@@ -13,24 +13,23 @@ function SecondaryButton(props) {
         color: #64748B;
         &:hover {
             background: #FFFFFF;
-             border: none;
-            Opacity: 80%
+            border: 1px solid #0F172A;
+            color: #0F172A;
+        
         }
         &:active {
             background: #DFDFDF;
-            border: none;
+            border: 1px solid #0F172A;
             Opacity: 60%
+            color: #0F172A;
 
         }
     `;
-    return (
-        <Clickable >
-            <Button className='p-2 text-md'>
-                {props.children}
-            </Button>
-        </Clickable>
-        
-    );
+  return (
+    <Clickable>
+      <Button className="p-2 text-md">{props.children}</Button>
+    </Clickable>
+  );
 }
 
 export default SecondaryButton;
